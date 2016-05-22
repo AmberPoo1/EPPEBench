@@ -1,0 +1,28 @@
+# --table-start--
+##dataClass=com.jingpu.android.ormliteexample.Item
+##tableName=ITEM
+# --table-fields-start--
+# --field-start--
+##fieldName=iIId
+##columnName=I_ID
+##id = true
+# --field-end--
+# --field-start--
+##fieldName=iIImId
+##columnName=I_IM_ID
+# --field-end--
+# --field-start--
+##fieldName=strIName
+##columnName=I_NAME
+# --field-end--
+# --field-start--
+##fieldName=bdIPrice
+##columnName=I_PRICE
+# --field-end--
+# --field-start--
+##fieldName=strIData
+##columnName=I_DATA
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

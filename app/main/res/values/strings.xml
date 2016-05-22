@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">APersistance</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_aa">AAActivity</string>
+    <string name="title_activity_run">RunActivity</string>
+
+    <string-array name="bm_arrays">
+        <item>D ActiveAndroid</item>
+        <item>D greenDAO</item>
+        <item>D OrmLite</item>
+        <item>D Sugar ORM</item>
+        <item>D SQLite</item>
+        <item>D Realm</item>
+        <item>A ActiveAndroid Initialization</item>
+        <item>A ActiveAndroid Insert</item>
+        <item>A ActiveAndroid Update</item>
+        <item>A ActiveAndroid Select</item>
+        <item>A ActiveAndroid Delete</item>
+        <item>A greenDAO Initialization</item>
+        <item>A greenDAO Insert</item>
+        <item>A greenDAO Update</item>
+        <item>A greenDAO Select</item>
+        <item>A greenDAO Delete</item>
+        <item>A OrmLite Initialization</item>
+        <item>A OrmLite Insert</item>
+        <item>A OrmLite Update</item>
+        <item>A OrmLite Select</item>
+        <item>A OrmLite Delete</item>
+        <item>A Sugar ORM Initialization</item>
+        <item>A Sugar ORM Insert</item>
+        <item>A Sugar ORM Update</item>
+        <item>A Sugar ORM Select</item>
+        <item>A Sugar ORM Delete</item>
+        <item>A SQLite Initialization</item>
+        <item>A SQLite Insert</item>
+        <item>A SQLite Update</item>
+        <item>A SQLite Select</item>
+        <item>A SQLite Delete</item>
+        <item>A Realm Initialization</item>
+        <item>A Realm Insert</item>
+        <item>A Realm Update</item>
+        <item>A Realm Select</item>
+        <item>A Realm Delete</item>
+    </string-array>
+</resources>

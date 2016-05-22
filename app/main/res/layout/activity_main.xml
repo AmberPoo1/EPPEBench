@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Android Persistance Test"
+        android:id="@+id/textViewTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewScale"
+        android:layout_toEndOf="@+id/textViewScale" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BM:"
+        android:id="@+id/textViewBm"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Transactions:"
+        android:id="@+id/textViewTTrans"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewBm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Scale:"
+        android:id="@+id/textViewScale"
+        android:layout_below="@+id/textViewTTrans"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Terminal Number:"
+        android:id="@+id/textViewTerminals"
+        android:layout_below="@+id/textViewScale"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pause Between Phases"
+        android:id="@+id/checkBoxPause"
+        android:layout_below="@+id/textViewTerminals"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phase Interval(S):"
+        android:id="@+id/textViewPhaseInterval"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/checkBoxPause"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AORM Transactions:"
+        android:id="@+id/textViewAORMTrans"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewPhaseInterval"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <!--
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editTextBm"
+        android:layout_alignBottom="@+id/textViewBm"
+        android:layout_alignRight="@+id/btnClose"
+        android:layout_alignEnd="@+id/btnClose"
+        android:layout_alignLeft="@+id/editTextTTrans"
+        android:layout_alignStart="@+id/editTextTTrans" />
+    -->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerBm"
+        android:entries="@array/bm_arrays"
+        android:layout_alignBottom="@+id/textViewBm"
+        android:layout_alignRight="@+id/btnClose"
+        android:layout_alignEnd="@+id/btnClose"
+        android:layout_marginTop="45dp"
+        android:theme="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_toEndOf="@+id/textViewScale"
+        android:layout_toRightOf="@+id/textViewScale"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextTTrans"
+        android:layout_above="@+id/textViewScale"
+        android:layout_toRightOf="@+id/textViewTTrans"
+        android:layout_toEndOf="@+id/textViewTTrans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextScale"
+        android:layout_alignBottom="@+id/textViewScale"
+        android:layout_toRightOf="@+id/textViewTTrans"
+        android:layout_toEndOf="@+id/textViewTTrans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextTerminals"
+        android:layout_alignBottom="@+id/textViewTerminals"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textViewTTrans"
+        android:layout_toEndOf="@+id/textViewTTrans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextPhaseInterval"
+        android:layout_alignBottom="@+id/textViewPhaseInterval"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btnRun"
+        android:layout_alignStart="@+id/btnRun"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextAORMTrans"
+        android:layout_alignBottom="@+id/textViewAORMTrans"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/checkBoxPause"
+        android:layout_toRightOf="@+id/checkBoxPause"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run"
+        android:id="@+id/btnRun"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnClose" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/btnClose"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
